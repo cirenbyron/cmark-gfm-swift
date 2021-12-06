@@ -16,13 +16,13 @@ Pod::Spec.new do |s|
   s.author           = { 'Ryan Nystrom' => 'rnystrom@whoisryannystrom.com' }
   s.source           = { :git => 'https://github.com/githawkapp/cmark-gfm-swift.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.10'
 
   s.source_files = 'Source/**/*'
   s.public_header_files = 'Source/*.h'
   s.exclude_files = "Source/Info.plist"
-  s.preserve_path = 'cmark-gfm-swift/Source/cmark_gfm/module.modulemap'
-  s.pod_target_xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(SRCROOT)/cmark-gfm-swift/Source/cmark_gfm/**' }
+  s.preserve_path = 'cmark-gfm-swift/Source/cmark_gfm/include/module.modulemap'
+  s.pod_target_xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(SRCROOT)/cmark-gfm-swift/Source/cmark_gfm/include/**' }
 
 end

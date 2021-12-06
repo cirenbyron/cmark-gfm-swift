@@ -1,0 +1,6 @@
+module cmark_gfm [extern_c] {
+    header "cmark.h"
+    header "node.h"
+    header "core-extensions.h"
+    export *
+}

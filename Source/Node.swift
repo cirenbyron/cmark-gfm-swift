@@ -67,7 +67,7 @@ public class Node: CustomStringConvertible {
     ) {
         core_extensions_ensure_registered()
 
-        var parserOptions = options.reduce(CMARK_OPT_DEFAULT, { (acc, op) in
+        let parserOptions = options.reduce(CMARK_OPT_DEFAULT, { (acc, op) in
             acc | op.rawValue
         })
 
